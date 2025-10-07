@@ -1,4 +1,4 @@
-// Simple SPA to mimic Figma professor screens (standalone)
+// Simple SPA to mimic Figma professor screens (standalo      el('div',{class:'brand'},[    el('div',{class:'brand'},['Quiz App', el('small',{},'Professor Dashboard')]),Quiz App', el('small',{},'Professor Dashboard')]),e)
 console.log('[prototype] app.js loaded');
 const app = document.getElementById('app');
 
@@ -216,7 +216,7 @@ function renderCreateQuiz(classId){
 
   const page = el('div',{class:'page'},[
     el('div',{class:'topbar'},[
-      el('div',{class:'brand'},['QuizPro', el('small',{},'Create Quiz')]),
+      el('div',{class:'brand'},['Quiz App', el('small',{},'Create Quiz')]),
       el('button',{class:'avatar',onClick:()=>location.hash='#classes'}, '←')
     ])
   ]);
@@ -362,7 +362,7 @@ function renderQuizManager(quizId){
   app.innerHTML='';
   const page = el('div',{class:'page'});
   page.appendChild(el('div',{class:'topbar'},[
-    el('div',{class:'brand'},['QuizPro', el('small',{},'Live Quiz')]),
+    el('div',{class:'brand'},['Quiz App', el('small',{},'Live Quiz')]),
     el('button',{class:'avatar',onClick:()=>location.hash='#classes'}, '←')
   ]));
 
@@ -402,7 +402,7 @@ function renderQuizReport(quizId){
   app.innerHTML='';
   const page = el('div',{class:'page'});
   page.appendChild(el('div',{class:'topbar'},[
-    el('div',{class:'brand'},['QuizPro', el('small',{},'Report')]),
+    el('div',{class:'brand'},['Quiz App', el('small',{},'Report')]),
     el('button',{class:'avatar',onClick:()=>location.hash='#classes'}, '←')
   ]));
 
