@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>QuizPro – Professor Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app"></div>
+
+  <script>
+    // Dev helper: surface uncaught errors
+    window.onerror = function (msg, src, line, col) {
+      console.error('[prototype.error]', msg, src, line, col);
+      const el = document.createElement('pre');
+      el.className = 'toast-error';
+      el.textContent = '[prototype error] ' + msg + ' (line ' + line + ')';
+      document.body.appendChild(el);
+      setTimeout(()=>el.remove(), 6000);
+      return false;
+    };
+  </script>
+  <script src="app.js"></script>
+</body>
+</html>
